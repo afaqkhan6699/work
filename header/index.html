@@ -43,7 +43,7 @@
             </li>
           </ul>
 
-          <div class="absolute top-0 pl-2 pt-2 sm:hidden">
+          <div class="absolute top-0 pl-2 pt-2 sm:hidden" id="mobilemenuclose">
             <i class="ri-close-line cursor-pointer text-xl font-bold"></i>
           </div>
         </div>
@@ -53,9 +53,13 @@
     <script>
       const mobilemenuicon = document.getElementById('mobilemenuicon')
       const mobilemenu = document.getElementById('mobilemenu')
+      const mobilemenuclose = document.getElementById('mobilemenuclose')
 
       mobilemenuicon.addEventListener("click", ()=> {
           mobilemenu.classList.remove('hidden')
+      })
+      mobilemenuclose.addEventListener("click", ()=> {
+          mobilemenu.classList.add('hidden')
       })
     </script>
 
