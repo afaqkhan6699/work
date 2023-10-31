@@ -1,1 +1,81 @@
+<!------------------Body ------------------------->
+<!---------------- Header ------------------------>
 
+<header>
+      <div class="flex h-10 items-center bg-black text-lg font-bold">
+        <marquee class="font-extrabold text-white">10% OFF SITEWIDE DIWALI SALE &emsp; &emsp; ENDS NOVEMBER 12th</marquee>
+      </div>
+      <div class="flex flex-auto h-12 items-center justify-between sm:h-20">
+        <div class="flex w-32 flex-auto items-center justify-start pl-4">
+          <img src="https://queenofheartsjewelry.us/wp-content/uploads/thegem-logos/logo_074455ce14c820d42c50575044dcec89_1x.png" alt="" class="w-52 pt-1 sm:w-64" />
+        </div>
+        <div class="flex w-80 flex-auto items-center justify-end gap-4 pr-4">
+          <div class="hidden sm:block">(412)-919-9448 / Mon - Sun 8AM - 7PM EST</div>
+          <i class="ri-shopping-cart-line flex items-center text-xl"></i>
+        </div>
+      </div>
+      <nav class="flex h-12 w-full items-center bg-slate-100 pl-4 pr-4">
+        <div class="sm:hidden" id="mobilemenuicon">
+          <i class="ri-menu-line cursor-pointer pr-1 text-lg font-bold"></i>
+        </div>
+
+        <div class="hidden absolute left-0 top-0  w-full bg-slate-200 py-10 sm:block sm:bg-transparent sm:w-auto sm:top-auto sm:pl-4" id="mobilemenu">
+          <ul class="flex flex-col items-center g sm:flex-row  sm:gap-4">
+            <li class=" border-b-2 border-gray-100 py-2 sm:border-none hover:bg-white sm:hover:bg-opacity-0 w-full flex justify-center ">
+              <a href="#home" class="hover:text-pink-400 font-serif text-lg font-bold">Home</a>
+            </li >
+            <li class=" border-b-2 border-gray-100 border-white py-2 sm:border-none hover:bg-white sm:hover:bg-opacity-0 w-full flex justify-center ">
+              <a href="#product" class="hover:text-pink-400 font-serif text-lg font-bold">Product</a>
+            </li>
+            <li class=" border-b-2 border-gray-100 py-2  sm:border-none hover:bg-white sm:hover:bg-opacity-0 w-full flex justify-center ">
+              <a href="#about" class="hover:text-pink-400 font-serif text-lg font-bold">About</a>
+            </li>
+            <li class=" border-b-2 border-gray-100 py-2 sm:border-none hover:bg-white sm:hover:bg-opacity-0 w-full flex justify-center ">
+              <a href="#contact" class="hover:text-pink-400 font-serif text-lg font-bold">Contact</a>
+            </li>
+          </ul>
+
+          <div class="absolute top-0 pl-2 pt-2 sm:hidden" id="mobilemenuclose">
+            <i class="ri-close-line cursor-pointer text-xl font-bold"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <script>
+      const mobilemenuicon = document.getElementById('mobilemenuicon')
+      const mobilemenu = document.getElementById('mobilemenu')
+      const mobilemenuclose = document.getElementById('mobilemenuclose')
+
+      mobilemenuicon.addEventListener("click", ()=> {
+          mobilemenu.classList.remove('hidden')
+      })
+      mobilemenuclose.addEventListener("click", ()=> {
+          mobilemenu.classList.add('hidden')
+      })
+    </script>
+
+
+<!------------------Main ------------------------->
+<!--------------- section 1 ---------------------->
+
+  <main class="">
+
+    <section>
+      <div class="grid grid-cols-1 gap-1 md:grid-cols-3">
+        <div style="background-image: url('https://images.unsplash.com/photo-1633810542706-90e5ff7557be?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" 
+        class="flex justify-center place-items-center w-auto h-screen bg-cover md:h-96 object-fill " >
+          <a href="https://queenofheartsjewelry.us/product-category/22k-indian-necklaces/" class="text-white  text-4xl font-medium underline visited:text-pink-200  ">Necklaces</a>
+        </div>
+        <div style="background-image: url('https://images.unsplash.com/photo-1617074172287-f364b77c1e77?auto=format&fit=crop&q=80&w=1925&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" 
+        class="flex justify-center place-items-center w-auto h-screen bg-cover md:h-96 object-fill md:max-h-96">
+          <a href="https://queenofheartsjewelry.us/product-category/22k-indian-earrings/" class="text-white  text-4xl font-medium underline visited:text-pink-200 "> Earrings</a>
+        </div>
+        <div style="background-image: url('https://images.unsplash.com/photo-1597006354775-2955b15ec026?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" 
+        class="flex justify-center place-items-center w-auto h-screen bg-cover md:h-96 ">
+          <a href="https://queenofheartsjewelry.us/product-category/22k-indian-bangles/" class="text-white text-4xl font-medium underline visited:text-pink-200 "> Bangles</a>
+        </div>
+      </div>
+    </section>
+  
+  </main>
