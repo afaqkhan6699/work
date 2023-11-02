@@ -53,12 +53,12 @@
     <!------------------Main ------------------------->
 
     <main class="">
-
+    <!------------------free shipping section ------------------------->
     <section>
       <div class="bg-pink-100 flex justify-center h-8 place-items-center ">FREE 2 DAY SHIPPING! GOLD PURITY ASSURANCE!
       </div>
     </section>
-
+<!------------------catogries images section  ------------------------->
     <section class="">
       
       <div class="grid grid-cols-1 gap-1 md:grid-cols-3">
@@ -83,6 +83,8 @@
       </div>
     </section>
 
+      <!------------------heading section ------------------------->
+
     <section>
         <div class="">
 
@@ -94,9 +96,33 @@
           </div>
         </div>
     </section>
+      
+  <!------------------typrewriter catogary text section------------------------->
+      
+    <section>
+          <div class="">
+  
+            <div class="py-14 text-3xl text-center md:text-5xl">
+                <span class="font-bold">22k Gold Pakistan</span> & South Asian  Jewellery         
+            </div>
+            <div class=" text-3xl text-center md:text-5xl">
+                Shop By <span class="font-bold" >Category</span>         
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="py-10 bg-black my-4">
+          <div class="text-3xl font-light text-center text-white">DISCOVER THE WORLD OF OUR Gold <span class="font-bold Categories" ></span></div>
+        </div>
+      </section>
+
+
+
   
   </main>
     
+    <!------------------javascript ------------------------->
+    <!------------------menu code ------------------------->
     <script>
       const mobilemenuicon = document.getElementById('mobilemenuicon')
       const mobilemenu = document.getElementById('mobilemenu')
@@ -107,6 +133,18 @@
       })
       mobilemenuclose.addEventListener("click", ()=> {
           mobilemenu.classList.add('hidden')
+      })
+    </script>
+
+  <!------------------typewriter text code ------------------------->
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".Categories",{
+          strings:["BANGLES","RINGS","EARRING","NECKLACE"],
+          typeSpeed: 150,
+          backSpeed: 150,
+          loop: true
       })
     </script>
 
